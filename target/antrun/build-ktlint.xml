@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="ktlint"  >
+<target name="ktlint">
+  <java fork="true" classname="com.pinterest.ktlint.Main" taskname="ktlint" failonerror="true" dir="/Users/jeju/projects/spring-elasticache-lettuce" classpathref="maven.plugin.classpath">
+    <arg value="-F"/>
+    <arg value="src/**/*.kt"/>
+  </java>
+</target>
+</project>
